@@ -39,7 +39,7 @@ as much as 2, and one hundred times as much as 3. To calculate the value
 of the expression 123, we really use this formula:
 
 ====
-( 1 × 102 ) + ( 2 × 101 ) + ( 3 × 100 )
+( 1 × 10^2^ ) + ( 2 × 10^1^ ) + ( 3 × 10^0^ )
 ====
 
 The generic formula looks like this:
@@ -52,23 +52,20 @@ OK, you say hesitantly, perhaps I understand something of what you're
 trying to say; now what about computers? Computers use base 2, they are
 binary and can only count 1's and 0's. There is either current through a
 circuit, or there isn't. They only use two symbols to express values. As
-you can imagine, the result is very long expressions, like
+you can imagine, the result is very long expressions, like:
 
-1. For presenting the value three, the computer uses the symbols
+1. For presenting the value three, the computer uses the symbols 11.
 2. Using our generic formula above, we translate this to:
 
 ====
-( 1 × 21 ) + ( 1 × 20 ) = 3
+( 1 × 2^1^ ) + ( 1 × 2^0^ ) = 3
 ====
 
 For expressing the number five, we would get 101:
 
-3 Of Various Things Mystic And Important, Mainly Concerning The Art Of
-Understanding Digits And Performing Traps
-
 ====
 ....
-1          +   0            1
+1              0            1
 1 × 2^2    +   0 × 2^1    + 1 × 2^0    = 5
 4          +   0          + 1          = 5
 ....
@@ -84,7 +81,7 @@ directly to the left of the second tumbler, will go from zero to one, and so for
 base 2, there are only two numbers on the tumblers, 1 and 0.
 
 In order to facilitate things, we also have base 16, or hexadecimal numbers. The reason for
-this is that conversion between decimal (base 10) and binary (base 2) numbers are
+this is that conversion between decimal (base 10) and binary (base 2) numbers is
 somewhat cumbersome, while conversion between hexadecimal, or hex for short (base 16)
 and binary is fairly easy. We use binary because the computer thinks in binary, we use hex
 because it's easier to convert binary into hex rather than decimal, and hex is much more
@@ -96,7 +93,7 @@ values, since we would need six more symbols for expressing the values ten, elev
 thirteen, fourteen and fifteen. We simply use letters from our alphabet. A = ten, B = eleven,
 C = twelve, D = thirteen, E = fourteen and F = fifteen. So to express the value fifteen in hex,
 we simply use `F`. To express sixteen, we get 10 (1 x 16^1 + 0 x 16^0 ). Seventeen is 11 (1 x 16^1
-+ 1 x 16^0. AF would mean one hundred and seventy five (10 x 16^1 + 15 x 16^0 ) and finally
++ 1 x 16^0). AF would mean one hundred and seventy five (10 x 16^1 + 15 x 16^0 ) and finally
 F5A would be three thousand nine hundred and thirty (15 x 16^2 + 5 x 16^1 + 10 x 16^0 ). If you
 don't get all this, this topic will probably be covered by every beginner's book and tutorial out
 there, go find an additional source of information.
@@ -127,7 +124,7 @@ link:appendixes/hardware-register-listing.txt[Hardware Register Listing], by Dan
 order to explain the GEMDOS trap routine we used in the last tutorial, I'll have to explain registers.
 The M68K (K here stands for kilo, meaning 1000, thus M68K and M68000 are synonyms) has 16
 registers plus one extra: eight data registers and eight address registers plus a program counter. 
-The program counter is really an address register that points on the next instruction to be performed,
+The program counter is really an address register that points to the next instruction to be performed,
 simply put, it keeps track of the program execution so that the Atari knows where it's at.
 
 The eight data registers work as eight variables that can store data. The eight address
@@ -138,7 +135,7 @@ as explained in tutorial one. Here is a usage example of the data register.
 ----
                 move.w  #10, d0                ; put value 10 into data register zero
                 move.w  #5, d1                 ; put value 5 into data register 1
-                add     d1, d0                 ; adds d1 to d0 and stores value in d
+                add     d1, d0                 ; adds d1 to d0 and stores value in d0
                 ; d0 now holds value 15
 ----
 
@@ -151,7 +148,7 @@ super smart programmer reads this and thinks; what an idiot).
 
 OK, on to the traps. There are three parts of the Atari that can perform traps; the GEMDOS,
 the BIOS and the XBIOS. The GEMDOS is the hardware independent part of the operating
-system, this means that the GEMDOS will work on different set of hardware on the Atari. The
+system, this means that the GEMDOS will work on a different set of hardware on the Atari. The
 BIOS is concerned with input and output, like keyboard input and so on, it works between the
 GEMDOS and the hardware. The XBIOS handles the extended features of the Atari hardware,
 whatever that means.
@@ -161,7 +158,7 @@ trap number and then cleaning up the stack. First, we need a special number, cal
 function number, indicating what function we want, for example, going into super mode is
 number 32 of the GEMDOS, meaning that we have to put the number 32 on the stack, and
 then call trap #1 (which is the trap number associated with GEMDOS). Usually, you also need
-to pass additional information to the Atari, this information is put on the stack before the trap
+to pass additional information to the Atari, this information is put on the stack before the function
 number, and then you call the trap. Thus, put any information associated with the function
 on the stack, then put the function code on the stack and then call the trap number that
 corresponds to the handler of the function.
