@@ -201,7 +201,7 @@ The difference is that we take the way around the XBIOS instead of just smacking
 value directly to the memory, which as you can see is much easier to write. Really, since
 every action taken by the computer only changes the contents in memory, what the traps do
 is only to change the memory. This we can, in most cases, do ourselves, but in some cases,
-to call a trap may be easier, clearer and perhaps more also more safe (stable).
+to call a trap may be easier, clearer and perhaps also more safe (stable).
 
 Now we are going to expand upon the program in tutorial two. It gets tedious to run the
 program, and then change the background back by running the program again. Good
@@ -237,8 +237,8 @@ However, there is a drawback to the method described above; every time you assem
 code, you will have to load all your include files into memory from disk, which takes time.
 Only the source code you are currently working on is in memory, and any includes will have
 to be loaded every time. So, in order to speed things up, I usually include my libraries (or
-rather, the subroutines I need) into the source code I'm working at. This can be done with
-the file - insert file command, which will append a file at the cursor's position. Or you can
+rather, the subroutines I need) into the source code I'm working on. This can be done with
+the `File - Insert file` command, which will append a file at the cursor's position. Or you can
 just copy and paste from your library into your source code as you see fit
 
 [source]
@@ -251,14 +251,14 @@ neatly packed down the bottom of the code, the command `jsr` (Jump to SubRoutine
 us where we want. Then, we put the value of the background colour in `d7`, saving it. Smack
 in the red colour. Here comes another fine trap, when executed, it will wait for a key to be
 pressed before continuing with execution. This trap will give the user a chance to see the
-lovely red background colour, and then hit a key in order to progress. Again, I looked after
+lovely red background colour, and then hit a key in order to progress. Again, I looked for
 what I wanted in the ST Internals; something that would allow the program to pause and
 wait for a key to be pressed, lo and behold! I found it, and just copied the information. After
 this, the value from `d7` is put into colour 0, effectively restoring the old background colour.
 Lastly, a jump to the restore subroutine and a clean system exit.
 
 Now we have begun to forcefully control the program flow, the code isn't executed "top
-down", but with commands such as `jsr` and `rts` (Return from SubRoutine) we can jump
+down", but with commands such as `jsr` (Jump to SubRoutine) and `rts` (ReTurn from Subroutine) we can jump
 around. Usually, programs are built up of some initialisation routine, and then a loop more or
 less, which only consists of calling other sub-routines. A game of asteroids would for example
 look something like this.
