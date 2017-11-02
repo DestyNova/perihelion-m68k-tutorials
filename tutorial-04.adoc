@@ -141,22 +141,22 @@ in, first out; LIFO).
 
 When pushing (putting items on the stack), you address it using pre-decrement addressing
 mode, and when popping, post-increment. This means that if the stack from the beginning
-points to `$100`, it will point to lesser and lesser values as you push data, and will increase in
+points to `$88`, it will point to lesser and lesser values as you push data, and will increase in
 value as you pop.
 
 [source]
 ----
-                                                 ; (a7 = $100)
-                move.w  #10, -(a7)               ; push 10 onto the stack
-                                                 ; (a7 = $98)
-                move.w  #8, -(a7)                ; push 8 onto the stack
-                                                 ; (a7 = $96)
-                move.b  #1, -(a7)                ; push 1 onto the stack
-                                                 ; (a7 = $95, uneven address, be careful)
+                                                 ; (a7 = $88)
+                move.w  #10, -(a7)               ; (pre-decrement a7 = $86)
+                                                 ; push 10 onto the stack
+                move.w  #8, -(a7)                ; (pre-decrement a7 = $84)
+                                                 ; push 8 onto the stack
+                move.b  #1, -(a7)                ; (pre-decrement a7 = $83, uneven address, be careful)
+                                                 ; push 1 onto the stack
                 move.b  (a7)+, d0                ; pop stack into d0
-                                                 ; (a7 = $96)
+                                                 ; (post-increment a7 = $84)
                 move.w  (a7)+, d1                ; pop stack into d1
-                                                 ; (a7 = $98)
+                                                 ; (post-increment a7 = $86)
 ----
 
 As you see, the stack clears itself up when using push and pop instructions. However, when
