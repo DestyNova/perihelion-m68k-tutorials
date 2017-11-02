@@ -11,14 +11,14 @@ ____
 So, finally; addressing! Before writing this, I read the first two chapters in Steve William's
 "Programming the 68000", and it was very good reading. He explained some things that I did
 not really go into, and above all, he has extensive explanations of addressing, before going
-into any code. Well, well, all I can say is that I have an a bit more pragmatic approach, this is
+into any code. Well, well, all I can say is that I have a bit more pragmatic approach, this is
 after all a tutorial, and the aim is for you to learn through doing. Theory will usually only be
 covered in connection with practice. With this in mind, I urge you to get your hands on some
 M68K book and study it, because it goes through things more in theory than I do. You will
 probably find some of these books on some dusty bookshelf in your local library.
 
 You should have a pretty good idea what memory is, and also what the memory registers do.
-Memory is simply put the computers warehouse for storing numbers. Numbers are stored in
+Memory is, simply put, the computer's warehouse for storing numbers. Numbers are stored in
 binary format, that is, only 1's and 0's (refer to <<tutorial-02#,tutorial 2>>
 for information on this). There are also standard formats for how many 1's and 0's are stored.
 The M68K has three; byte, word and longword. A byte is 8 1's and 0's, a word is 16 and a longword
@@ -33,10 +33,10 @@ is 32. So the quantities have the following storage capacities.
 |=======================
 
 So, `move.w` means move a value, with word size. If we move a value that is bigger than
-word size (value > 65536), the value will be truncated (cut off), since we tell the computer to
+word size (value >= 65536), the value will be truncated (cut off), since we tell the computer to
 only move 16 1's and 0's. The term "1's and 0's" is called a bit. So, a byte contains 8 bits,
 never ever never confuse bits with bytes. The capacity is also somewhat of a misnomer.
-Since computer start counting at 0, the maximum value containable in a byte is 255. Also, in
+Since computers start counting at 0, the maximum value containable in a byte is 255. Also, in
 order to have negative numbers, the range of a byte is usually -128 to +127. Arithmetic that
 does not deal with negative numbers is called unsigned, and when negative numbers are
 involved, it's called signed arithmetic.
@@ -62,13 +62,13 @@ we moved the word that `a0` pointed to, we would get `%0101010110101010`. If we 
 moved the value of `a0`, we would get `$2`. There is a great difference to getting the value an
 address register points to, and the value in the address register. When we want something
 the register points to, we use parentheses around the address register, like this: `(a0)`. So, `(a0)`
-means the value of the memory place that `a0` points to, in this case `01010101`, and simply `a`
+means the value of the memory place that `a0` points to, in this case `01010101`, and simply `a0`
 (without parentheses) means the value in `a0` itself, in this case `$2`.
 
 You can also put `+` and `-` characters before or after the address, meaning that you wish to
-increase or decrease the address registers value, either before or after the operation has
+increase or decrease the address register's value, either before or after the operation has
 been performed (called post or pre increment or decrement). Therefore, `move.b (a0)-, d0`
-means put the value of byte size that `a0` points to in `d0`, then decrease `a0` with one. The
+means put the value of byte size that `a0` points to in `d0`, then decrease `a0` by one. The
 value that the address will be manipulated with, is dependent on the memory chunk size, if
 it's byte, then 1, if word 2 and longword 4, in order to keep up with the changes. This is ideal
 for moving large areas of memory, you put your move instruction with post increment in a
