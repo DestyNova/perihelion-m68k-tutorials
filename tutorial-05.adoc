@@ -35,10 +35,10 @@ One bit is either a 1 or a 0. There are 8 bits to a byte, two bytes to a word an
 longword, meaning there are four bytes to a longword. BTW, four bits are called a nibble,
 which is half a byte. The smallest addressable memory block is a byte, meaning that every
 count of an address is a byte. This means that if `a0` points to `$100`, and you do a `move.w
-#10, -(a0)`, a0 will point to $98. `A0` will decrement by two, because a word is two bytes. If `a0`
+#10, -(a0)`, a0 will point to `$FE`. `A0` will decrement by two, because a word is two bytes. If `a0`
 points at `$100`, and you do a `move.l #10, (a0)+`, the value in a0 will be `$104`, since a
 longword is four bytes. The value at memory address `$100` will be 10, also, in the previous
-example with post decrementation, the value at `$98` will be 10, we don't know the value of
+example with pre-decrementation, the value at `$FE` will be 10, and we don't know the value of
 `$100`.
 
 I find it easiest to organize my files on the PC, and then transfer what I need to the Atari.
@@ -64,8 +64,8 @@ different resolutions. There are low, medium and high, easy as pie. High resolut
 which we find only on monochrome monitors, it's 640×400 pixels, and uses only two colours.
 Medium resolution is 640×200 pixels and uses four colours. Finally, the most interesting
 resolution is low, featuring 320×200 pixels with 16 colours. A pixel, btw, is a dot on the
-screen, if you look closer in a game or so, you'll se that the spaceship/dude/whatever is build
-up of small dots, those are pixels. The upper left corner is considered 0,0 in a coordination
+screen, if you look closer in a game or so, you'll see that the spaceship/dude/whatever is built
+up of small dots, those are pixels. The upper left corner is considered 0,0 in a coordinate
 system, and the bottom right corner is the maximum. Thus, in low resolution, the pixel at 0 x
 and 0 y is in the left uppermost corner, and the pixel at 319 x and 199 y is at the bottommost
 right position.
@@ -98,11 +98,11 @@ interesting mode and the exact same technique is used in medium resolution, but 
 two bit planes instead of four. OK, here goes. The pixels are stored in words, in groups of 16
 (remember, 16 bits in a word). The first 16 pixels are thus stored in 4 words, that come after
 one another. Thus, the first 4 words of the screen memory are used to store the first 16
-pixels. I'm feeling I'm loosing it here, this is damn hard to explain, and it took me weeks
+pixels. I'm feeling I'm losing it here, this is damn hard to explain, and it took me weeks
 before I got it myself.
 
 The bit in the first word is the least significant bit in the colour number. Least significant
-means the rightmost bit, since this is the one that affect the value the least (it either adds
+means the rightmost bit, since this is the one that affects the value the least (it either adds
 one or zero to the final value), while the most significant bit is the leftmost bit. The bit in the
 fourth word is the most significant bit in the colour number. The first bits in the first four
 words control the first pixel. Are you confused yet? An example perhaps.
@@ -152,9 +152,9 @@ consuming work. Just for comparison, there is a graphics mode on the PC, the MCG
 which is extremely user friendly. It also has 320×200 pixels, but 256 colours instead. Does
 this value ring a bell? It's a byte! So, each pixel is represented by a byte, making it a wonder
 of ease of use. In order to change the pixel, you just have to address the correct byte, which
-is dead simple. It would be done like this, `move.b #255, (a0)` where a0 points to address
+is dead simple. It would be done like this, `move.b #255, (a0)` where a0 points to screen
 memory. This would change the first pixel to colour 255. Or to change the third pixel, `move.b
-#255, 3(a0). But to change the first pixel on the Atari, in low resolution, we instead have to
+#255, 2(a0)`. But to change the first pixel on the Atari, in low resolution, we instead have to
 do something like this.
 
 [source]
@@ -202,7 +202,7 @@ the next VBL, that is, the next time the electron beam is about to paint the scr
 excellent timer, and will allow you to know exactly how much time everything takes. Just
 think about it, if you put the wait for VBL trap in the beginning of your main loop, you'll know
 that the loop will perform 50 times per second. This is ideal for making games or demos not
-run to fast. The trap function number is 37, it's called by XBIOS and looks like this:
+run too fast. The trap function number is 37, it's called by XBIOS and looks like this:
 
 [source]
 ----
