@@ -82,14 +82,14 @@ counter you'll see the instruction that it points to.
 
 The disassembly area is the code you're currently debugging. It will look just like your source
 code. You can scroll up and down the code, and a little arrow will indicate your current
-position. To execute a line of code, press `ALT+z`, to skip a line of code, press `ALT+s`. Usually,
+position. To execute a line of code, press `CTRL+z`, to skip a line of code, press `CTRL+s`. Usually,
 you'll want to skip jumping into the initialise subroutine, because this takes some time and
 might also put the ST in low resolution, making it hard to see anything. You'll usually want to
 go to the mathematical equations directly, to see what happens. There's also a very nice way
 to jump straight to a position of your choosing. You can put "flags" in your source code, by
 entering the command "illegal", then, when in debugger mode, hit `CTRL+r`. This will execute all
 commands from your current position to the next illegal position, you'll have to skip past the
-illegal instruction to continue, using `ALT+s`. A great way for executing an entire loop without
+illegal instruction to continue, using `CTRL+s`. A great way for executing an entire loop without
 stepping through it all.
 
 The memory area is most interesting, this is where the entire content of the memory is listed.
