@@ -154,7 +154,7 @@ this value ring a bell? It's a byte! So, each pixel is represented by a byte, ma
 of ease of use. In order to change the pixel, you just have to address the correct byte, which
 is dead simple. It would be done like this, `move.b #255, (a0)` where a0 points to address
 memory. This would change the first pixel to colour 255. Or to change the third pixel, `move.b
-#255, 3(a0). But to change the first pixel on the Atari, in low resolution, we instead have to
+#255, 3(a0)`. But to change the first pixel on the Atari, in low resolution, we instead have to
 do something like this.
 
 [source]
