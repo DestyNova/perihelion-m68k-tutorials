@@ -435,13 +435,131 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+pre.rouge table td { padding: 5px; }
+pre.rouge table pre { margin: 0; }
+pre.rouge, pre.rouge .w {
+  color: #24292f;
+  background-color: #f6f8fa;
+}
+pre.rouge .k, pre.rouge .kd, pre.rouge .kn, pre.rouge .kp, pre.rouge .kr, pre.rouge .kt, pre.rouge .kv {
+  color: #cf222e;
+}
+pre.rouge .gr {
+  color: #f6f8fa;
+}
+pre.rouge .gd {
+  color: #82071e;
+  background-color: #ffebe9;
+}
+pre.rouge .nb {
+  color: #953800;
+}
+pre.rouge .nc {
+  color: #953800;
+}
+pre.rouge .no {
+  color: #953800;
+}
+pre.rouge .nn {
+  color: #953800;
+}
+pre.rouge .sr {
+  color: #116329;
+}
+pre.rouge .na {
+  color: #116329;
+}
+pre.rouge .nt {
+  color: #116329;
+}
+pre.rouge .gi {
+  color: #116329;
+  background-color: #dafbe1;
+}
+pre.rouge .ges {
+  font-weight: bold;
+  font-style: italic;
+}
+pre.rouge .kc {
+  color: #0550ae;
+}
+pre.rouge .l, pre.rouge .ld, pre.rouge .m, pre.rouge .mb, pre.rouge .mf, pre.rouge .mh, pre.rouge .mi, pre.rouge .il, pre.rouge .mo, pre.rouge .mx {
+  color: #0550ae;
+}
+pre.rouge .sb {
+  color: #0550ae;
+}
+pre.rouge .bp {
+  color: #0550ae;
+}
+pre.rouge .ne {
+  color: #0550ae;
+}
+pre.rouge .nl {
+  color: #0550ae;
+}
+pre.rouge .py {
+  color: #0550ae;
+}
+pre.rouge .nv, pre.rouge .vc, pre.rouge .vg, pre.rouge .vi, pre.rouge .vm {
+  color: #0550ae;
+}
+pre.rouge .o, pre.rouge .ow {
+  color: #0550ae;
+}
+pre.rouge .gh {
+  color: #0550ae;
+  font-weight: bold;
+}
+pre.rouge .gu {
+  color: #0550ae;
+  font-weight: bold;
+}
+pre.rouge .s, pre.rouge .sa, pre.rouge .sc, pre.rouge .dl, pre.rouge .sd, pre.rouge .s2, pre.rouge .se, pre.rouge .sh, pre.rouge .sx, pre.rouge .s1, pre.rouge .ss {
+  color: #0a3069;
+}
+pre.rouge .nd {
+  color: #8250df;
+}
+pre.rouge .nf, pre.rouge .fm {
+  color: #8250df;
+}
+pre.rouge .err {
+  color: #f6f8fa;
+  background-color: #82071e;
+}
+pre.rouge .c, pre.rouge .ch, pre.rouge .cd, pre.rouge .cm, pre.rouge .cp, pre.rouge .cpf, pre.rouge .c1, pre.rouge .cs {
+  color: #6e7781;
+}
+pre.rouge .gl {
+  color: #6e7781;
+}
+pre.rouge .gt {
+  color: #6e7781;
+}
+pre.rouge .ni {
+  color: #24292f;
+}
+pre.rouge .si {
+  color: #24292f;
+}
+pre.rouge .ge {
+  color: #24292f;
+  font-style: italic;
+}
+pre.rouge .gs {
+  color: #24292f;
+  font-weight: bold;
+}
+</style>
 <a href="https://github.com/nguillaumin/perihelion-m68k-tutorials"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
 <style>.toc-current{font-weight: bold;} .toc-root{font-family: "Open Sans","DejaVu Sans",sans-serif;
                        font-size: 0.9em;} #content{display: flex; flex-direction: column; flex: 1 1 auto;}
              .nav-footer{text-align: center; margin-top: auto;}
              .nav-footer > p > a {white-space: nowrap;}</style>
 </head>
-<body id="index" class="book toc2 toc-left">
+<body id="_of_the_workings_of_devpac_3_and_the_realisation_of_some_code" class="book toc2 toc-left">
 <div id="header">
 <h1>The Atari ST MC68000 Assembly Language Tutorials</h1>
 <div class="details">
@@ -451,12 +569,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
-<p><span class="toc-root toc-current"><a href="index.html">The Atari ST MC68000 Assembly Language Tutorials</a></span></p><ul class="sectlevel1">
+<p><span class="toc-root"><a href="index.html">The Atari ST MC68000 Assembly Language Tutorials</a></span></p><ul class="sectlevel1">
 <li><a href="_foreword.html">Foreword</a>
 </li>
 <li><a href="_on_the_theory_behind_programming.html">On The Theory Behind Programming</a>
 </li>
-<li><a href="_of_the_workings_of_devpac_3_and_the_realisation_of_some_code.html">Of The Workings Of Devpac 3 And The Realisation Of Some Code</a>
+<li><a href="_of_the_workings_of_devpac_3_and_the_realisation_of_some_code.html"><span class="toc-current">Of The Workings Of Devpac 3 And The Realisation Of Some Code</span></a>
 </li>
 <li><a href="_of_various_things_mystic_and_important_mainly_concerning_the_art_of_understanding_digits_and_performing_traps.html">Of Various Things Mystic And Important, Mainly Concerning The Art Of Understanding Digits And Performing Traps</a>
 </li>
@@ -490,79 +608,218 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div id="content">
-<div id="preamble">
+<div class="sect1">
+<h2 id="_of_the_workings_of_devpac_3_and_the_realisation_of_some_code">Of The Workings Of Devpac 3 And The Realisation Of Some Code</h2>
 <div class="sectionbody">
-<div class="admonitionblock tip">
-<table>
+<div class="paragraph">
+<p><em>2002-06-14 (last edition of the initial revision)</em></p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>No immovable roots, no stirring of dust, only the tao; the way of
+nature. This is called tai chi.</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; Tai Chi Master
+</div>
+</div>
+<div class="paragraph">
+<p>Hello again. It&#8217;s only been some days since the last tutorial, but I&#8217;m bored right now and I
+don&#8217;t have any computer game I feel like playing. This weekend went great, as it was
+GothCon (game convention here in Göteborg, Sweden) which meant games were afoot. I met
+Aldebaran for the first time IRL and he demonstrated the game Illuminati, which I plan to
+play later on this evening. But you don&#8217;t really want to listen to that, do you?</p>
+</div>
+<div class="paragraph">
+<p>In the last tutorial, we went through some basic theory behind programming, and now we
+are going to put that theory into practice. We want to do something so awfully cool as to
+change the background colour to something else. First, we need to gather and learn how to
+use the tools. The tools in this case are only one; Devpac 3.00 by HiSoft. It can be acquired
+from Pompey Pirates CD #114, other places, or perhaps you can even buy it :)</p>
+</div>
+<div class="paragraph">
+<p>Once we start up Devpac, we want to change some settings to make our lives easier. Go into
+options - control, under the setting format, select ST RAM, depending on your memory size,
+you may also wish to change the memory buffer. The only two interesting settings here are
+ST RAM and Atari Executable. If you choose Atari Executable, you will get a <code>.prg</code> file every
+time you assemble (also known as compile) your source code, so in order to test your source
+code, you will have to quit Devpac, and run the <code>.prg</code> file, then start Devpac again;
+enormously clumsy. Instead, we put the <code>.prg</code> file directly into the ST RAM (memory, RAM
+stands for Random Access Memory), from where it can be executed directly. So for now, set
+the setting to ST RAM. It&#8217;s only when you are done coding something, that you will want to
+change this setting to Atari Executable in order to get a normal <code>.prg</code> file. Go into options -
+options, and uncheck the "Check absolutes for missing #". This eliminates lots of error
+reports than usually aren&#8217;t error reports. In the options - environment you can set the
+environment variables, if you run from diskette, they should probably be something like
+<code>PATH=a:\bin,INCDIR=a:\incdir</code>. Go into options - resident and make sure both Assembler
+and Debugger are checked, this will also save you lots of time if you have the memory (since
+I run on 4 megs, I don&#8217;t have to worry). That&#8217;s about it I think, you can play around with
+settings on your own if you like, but these are essentials in my opinion.</p>
+</div>
+<div class="paragraph">
+<p>OK, we have our environment (Devpac) correctly configured, now we want to do something.
+Remembering the past lesson, we soon realize that to change the background colour, we will
+have to know what controls the background colour. On the
+<a href="appendixes/hardware-register-listing.txt">Hardware Register Listing</a>, by Dan Hollis,
+you&#8217;ll find a listing of the ST&#8217;s memory, great for reference, in it we find the following lines:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-This tutorial is also available in <a href="perihelion-m68k-tutorials.epub">ePub format</a>.
-</td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">$FF8240</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">word</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Video palette register 0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">R/W</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">$FF825E</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">word</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Video palette register 15</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">R/W</p></td>
+</tr>
+</tbody>
 </table>
+<div class="paragraph">
+<p>As you may know, the ST is capable of displaying 16 colours at once, with a palette of 512
+colours. Having a palette means that you don&#8217;t have to stay with 16 fixed colours, by
+changing the palette you can, say have 16 hues of red, and then 16 hues of blue on the next
+screen. Imagine an artist that can only have 16 colours on each of his paintings, however, he
+doesn&#8217;t have to stick with the same 16 colours each time. OK, it seems that the first colour
+starts at <code>$FF8240</code>, this is indeed colour 0 and it&#8217;s the background colour, so by merely
+changing the value here, we should change the background colour.</p>
+</div>
+<div class="paragraph">
+<p>I talked about palettes just now, the ST is built on what you call RGB, Red Green Blue,
+colour. Every colour is made up of 8 levels of Red, Green and Blue, because the computer
+always counts from 0, the range is between 0 - 7. 8 × 8 × 8 = 512. So, the colour <code>$700</code>
+would mean as red as you can get (maximum value of Red, zero value of Green and Blue).
+<code>$770</code> would be yellow, <code>$777</code> would be white and <code>$000</code> would be black. Equipped with this
+knowledge we enter this single line as our source code</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="m68k">                <span class="k">move</span><span class="nd">.w </span> <span class="nd">#</span><span class="mh">$700</span><span class="p">,</span> <span class="mh">$ffff8240</span>        <span class="c1">; red background color</span></code></pre>
 </div>
 </div>
+<div class="paragraph">
+<p>Move is the command used for moving values around other values, in this case, we move the
+value <code>#$700</code> into memory position <code>$ffff8240</code>. The <code>#</code> indicates that what comes after is an
+absolute value, and the <code>$</code> means that the value is hexadecimal, instead of decimal (more on
+this later, accept for now). The <code>.w</code> after the move instruction means that the move instruction
+should move a word, indicating the size of the thing you want moved (more on this later also,
+accept for now). So, the line above means in clear (?) English; move a value of word size, an
+absolute value expressed as a hexadecimal value 700 into the memory address <code>$ffff8240</code>.
+This should be enough to change the background colour to red.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="_foreword.html">Foreword</a></p>
-</li>
-<li>
-<p><a href="_on_the_theory_behind_programming.html">On The Theory Behind Programming</a></p>
-</li>
-<li>
-<p><a href="_of_the_workings_of_devpac_3_and_the_realisation_of_some_code.html">Of The Workings Of Devpac 3 And The Realisation Of Some Code</a></p>
-</li>
-<li>
-<p><a href="_of_various_things_mystic_and_important_mainly_concerning_the_art_of_understanding_digits_and_performing_traps.html">Of Various Things Mystic And Important, Mainly Concerning The Art Of Understanding Digits And Performing Traps</a></p>
-</li>
-<li>
-<p><a href="_of_the_ways_of_addressing_memory.html">Of The Ways Of Addressing Memory</a></p>
-</li>
-<li>
-<p><a href="_of_the_workings_of_the_graphics_memory_and_minor_skills_in_branching.html">Of The Workings Of The Graphics Memory And Minor Skills In Branching</a></p>
-</li>
-<li>
-<p><a href="_of_seeing_behind_the_curtain_of_an_execution_and_getting_intimate_with_files.html">Of Seeing Behind The Curtain Of An Execution And Getting Intimate With Files</a></p>
-</li>
-<li>
-<p><a href="_on_scrollers.html">On Scrollers</a></p>
-</li>
-<li>
-<p><a href="_of_scrolling_8_pixels_per_vbl_using_double_buffer.html">Of Scrolling 8 Pixels Per VBL Using Double Buffer</a></p>
-</li>
-<li>
-<p><a href="_of_revealing_the_unseen_and_expanding_our_consciousness_without_the_use_of_illegal_drugs.html">Of Revealing The Unseen And Expanding Our Consciousness Without The Use Of Illegal Drugs</a></p>
-</li>
-<li>
-<p><a href="_of_lighting_a_candle_and_casting_a_shadow.html">Of Lighting A Candle (And Casting A Shadow)</a></p>
-</li>
-<li>
-<p><a href="_of_making_the_mountain_move_to_mohammed.html">Of Making The Mountain Move To Mohammed</a></p>
-</li>
-<li>
-<p><a href="_of_controlling_the_puppets.html">Of Controlling The Puppets</a></p>
-</li>
-<li>
-<p><a href="_of_hearing_that_which_is_spoken.html">Of Hearing That Which Is Spoken</a></p>
-</li>
-<li>
-<p><a href="_of_using_the_gramophone.html">Of Using The Gramophone</a></p>
-</li>
-<li>
-<p><a href="_on_fading_to_black.html">On Fading To Black</a></p>
-</li>
-<li>
-<p><a href="_appendixes.html">Appendixes</a></p>
-</li>
-</ul>
+<div class="paragraph">
+<p>Now we want to assemble the source code, and get our executable. Short command for this
+in Devpac is <code>ALT+a</code>. Now, a window will pop up, displaying some statistics, what we want to
+search for is especially the line "0 errors found". If there are errors found, the pointer will
+automatically move to the error so that you can correct it. By pressing <code>ALT+&lt;number&gt;</code>, you can
+cycle through the available windows. So, if you do get an error, but you don&#8217;t understand it,
+press for example <code>ALT+2</code>, which will take you to the second window, where the error report
+probably is, try to understand something, then hit <code>ALT+1</code> to go back and edit your source
+code. <code>CTRL+w</code> will close a window. Okie dokie, the source code has compiled successfully,
+now we need to run it; hit <code>ALT+x</code> (e<strong>X</strong>ecute). Now you will be asked to pass parameters to
+the program, don&#8217;t, just hit enter. Oh, the expectation, will the background change to red?</p>
+</div>
+<div class="paragraph">
+<p>NO! We get two fucking bombs for all our effort. What the fuck? Is there anything wrong
+with the source code, no, it seems not. Is there anything wrong with the address? Double-
+checking the address value, no, <code>$ffff8240</code> means colour 0, which is the background colour.
+Well, the ST can operate in two modes, user and super mode. In the user mode, we aren&#8217;t
+allowed to access certain things in memory, for example the palette, the result if we try to do
+this is two bombs. So we need to go into super mode. Referring to a list of the so called trap
+functions of GEMDOS, ideally the ST Internals, we find out how to enter super mode, the
+code looks like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="m68k">                <span class="k">clr</span><span class="nd">.l </span>  <span class="o">-</span><span class="p">(</span><span class="nb">a7</span><span class="p">)</span>                  <span class="c1">; clear stack</span>
+                <span class="k">move</span><span class="nd">.w </span> <span class="nd">#</span><span class="mi">32</span><span class="p">,</span> <span class="o">-</span><span class="p">(</span><span class="nb">a7</span><span class="p">)</span>             <span class="c1">; prepare for super mode</span>
+                <span class="k">trap</span>    <span class="nd">#</span><span class="mi">1</span>                     <span class="c1">; call gemdos</span>
+                <span class="k">addq</span><span class="nd">.l </span> <span class="nd">#</span><span class="mi">6</span><span class="p">,</span> <span class="nb">a7</span>                 <span class="c1">; clear up stack</span>
+                <span class="k">move</span><span class="nd">.l </span> <span class="nb">d0</span><span class="p">,</span> <span class="nv">old_stack</span>          <span class="c1">; backup old stack pointer</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(ok, so the code looks somewhat different than in ST Internals, a good lesson for you that
+you can write differently, but still achieve the same)</p>
+</div>
+<div class="paragraph">
+<p>Perhaps I shouldn&#8217;t go too deeply into this, it will come in the next tutorial where I&#8217;ll take up
+the different registers and talk about traps and so on. For now, you&#8217;ll just have to accept it,
+but for you curious types, here&#8217;s a short one. The GEMDOS has several special functions,
+which are accessed by the <code>trap #1</code> command (calling <code>trap #13</code> calls BIOS functions). The
+controlling value is put on the stack, which is address register <code>a7</code> (you can also type <code>sp</code>, short
+for stack pointer, instead of <code>a7</code>). The <code>move.l d0, old_stack</code> is for backing up the old user
+stack, which gets replaced when we go into super mode.</p>
+</div>
+<div class="paragraph">
+<p>This code obviously goes at the top of our source code, the first thing we want is to go into
+super mode, then we put red colour in palette register 0, lastly, we want to go back into user
+mode and also add another two lines of "accept now, understand later" code, which will make
+a clean exit of the program. The total code looks like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="m68k">                <span class="k">clr</span><span class="nd">.l </span>  <span class="o">-</span><span class="p">(</span><span class="nb">a7</span><span class="p">)</span>                  <span class="c1">; clear stack</span>
+                <span class="k">move</span><span class="nd">.w </span> <span class="nd">#</span><span class="mi">32</span><span class="p">,</span> <span class="o">-</span><span class="p">(</span><span class="nb">a7</span><span class="p">)</span>             <span class="c1">; prepare for super mode</span>
+                <span class="k">trap</span>    <span class="nd">#</span><span class="mi">1</span>                     <span class="c1">; call gemdos</span>
+                <span class="k">addq</span><span class="nd">.l </span> <span class="nd">#</span><span class="mi">6</span><span class="p">,</span> <span class="nb">a7</span>                 <span class="c1">; clear up stack</span>
+                <span class="k">move</span><span class="nd">.l </span> <span class="nb">d0</span><span class="p">,</span> <span class="nv">old_stack</span>          <span class="c1">; backup old stack pointer</span>
+
+                <span class="k">move</span><span class="nd">.w </span> <span class="nd">#</span><span class="mh">$700</span><span class="p">,</span> <span class="mh">$ffff8240</span>       <span class="c1">; red background color</span>
+
+                <span class="k">move</span><span class="nd">.l </span> <span class="nv">old_stack</span><span class="p">,</span> <span class="o">-</span><span class="p">(</span><span class="nb">a7</span><span class="p">)</span>       <span class="c1">; restore old stack pointer</span>
+                <span class="k">move</span><span class="nd">.w </span> <span class="nd">#</span><span class="mi">32</span><span class="p">,</span> <span class="o">-</span><span class="p">(</span><span class="nb">a7</span><span class="p">)</span>             <span class="c1">; back to user mode</span>
+                <span class="k">trap</span>    <span class="nd">#</span><span class="mi">1</span>                     <span class="c1">; call gemdos</span>
+                <span class="k">addq</span><span class="nd">.l </span> <span class="nd">#</span><span class="mi">6</span><span class="p">,</span> <span class="nb">a7</span>                 <span class="c1">; clear stack</span>
+
+                <span class="k">clr</span><span class="nd">.l </span>  <span class="o">-</span><span class="p">(</span><span class="nb">a7</span><span class="p">)</span>                  <span class="c1">; clean exit</span>
+                <span class="k">trap</span>    <span class="nd">#</span><span class="mi">1</span>                     <span class="c1">; call gemdos</span>
+
+<span class="nl">old_stack</span>       <span class="kt">dc</span><span class="nd">.l </span><span class="mi">0</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Running this program will successfully change the background colour to red, and then make a
+nice and clean exit, restoring the Atari to user mode once again.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/tutorial-02-screenshot.png" alt="tutorial 02 screenshot">
+</div>
+<div class="title">Figure 1. Red background</div>
+</div>
+<div class="paragraph">
+<p>Problem is, we now have a red background. Not to good you might think. This can be easily
+remedied however, we have made a program that changes background colour, let&#8217;s use it!
+Change the value <code><mark>$700</code> to <code></mark>$777</code> and run the program again. The background colour
+will now be white as snow, like we&#8217;re used to.</p>
+</div>
+<div class="paragraph">
+<p>In the next tutorial, I plan to cover hexadecimal, binary and decimal numbers, program flow
+and talk some about traps and registers.</p>
+</div>
+</div>
 </div>
 <div class="paragraph nav-footer">
-<p>Next: <a href="_foreword.html">Foreword</a> →</p>
+<p>← Previous: <a href="_on_the_theory_behind_programming.html">On The Theory Behind Programming</a> | ↑ Up: <a href="index.html">The Atari ST MC68000 Assembly Language Tutorials</a> | Next: <a href="_of_various_things_mystic_and_important_mainly_concerning_the_art_of_understanding_digits_and_performing_traps.html">Of Various Things Mystic And Important, Mainly Concerning The Art Of Understanding Digits And Performing Traps</a> →</p>
 </div>
 </div>
 <div id="footer">

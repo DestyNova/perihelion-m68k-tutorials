@@ -435,13 +435,131 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+pre.rouge table td { padding: 5px; }
+pre.rouge table pre { margin: 0; }
+pre.rouge, pre.rouge .w {
+  color: #24292f;
+  background-color: #f6f8fa;
+}
+pre.rouge .k, pre.rouge .kd, pre.rouge .kn, pre.rouge .kp, pre.rouge .kr, pre.rouge .kt, pre.rouge .kv {
+  color: #cf222e;
+}
+pre.rouge .gr {
+  color: #f6f8fa;
+}
+pre.rouge .gd {
+  color: #82071e;
+  background-color: #ffebe9;
+}
+pre.rouge .nb {
+  color: #953800;
+}
+pre.rouge .nc {
+  color: #953800;
+}
+pre.rouge .no {
+  color: #953800;
+}
+pre.rouge .nn {
+  color: #953800;
+}
+pre.rouge .sr {
+  color: #116329;
+}
+pre.rouge .na {
+  color: #116329;
+}
+pre.rouge .nt {
+  color: #116329;
+}
+pre.rouge .gi {
+  color: #116329;
+  background-color: #dafbe1;
+}
+pre.rouge .ges {
+  font-weight: bold;
+  font-style: italic;
+}
+pre.rouge .kc {
+  color: #0550ae;
+}
+pre.rouge .l, pre.rouge .ld, pre.rouge .m, pre.rouge .mb, pre.rouge .mf, pre.rouge .mh, pre.rouge .mi, pre.rouge .il, pre.rouge .mo, pre.rouge .mx {
+  color: #0550ae;
+}
+pre.rouge .sb {
+  color: #0550ae;
+}
+pre.rouge .bp {
+  color: #0550ae;
+}
+pre.rouge .ne {
+  color: #0550ae;
+}
+pre.rouge .nl {
+  color: #0550ae;
+}
+pre.rouge .py {
+  color: #0550ae;
+}
+pre.rouge .nv, pre.rouge .vc, pre.rouge .vg, pre.rouge .vi, pre.rouge .vm {
+  color: #0550ae;
+}
+pre.rouge .o, pre.rouge .ow {
+  color: #0550ae;
+}
+pre.rouge .gh {
+  color: #0550ae;
+  font-weight: bold;
+}
+pre.rouge .gu {
+  color: #0550ae;
+  font-weight: bold;
+}
+pre.rouge .s, pre.rouge .sa, pre.rouge .sc, pre.rouge .dl, pre.rouge .sd, pre.rouge .s2, pre.rouge .se, pre.rouge .sh, pre.rouge .sx, pre.rouge .s1, pre.rouge .ss {
+  color: #0a3069;
+}
+pre.rouge .nd {
+  color: #8250df;
+}
+pre.rouge .nf, pre.rouge .fm {
+  color: #8250df;
+}
+pre.rouge .err {
+  color: #f6f8fa;
+  background-color: #82071e;
+}
+pre.rouge .c, pre.rouge .ch, pre.rouge .cd, pre.rouge .cm, pre.rouge .cp, pre.rouge .cpf, pre.rouge .c1, pre.rouge .cs {
+  color: #6e7781;
+}
+pre.rouge .gl {
+  color: #6e7781;
+}
+pre.rouge .gt {
+  color: #6e7781;
+}
+pre.rouge .ni {
+  color: #24292f;
+}
+pre.rouge .si {
+  color: #24292f;
+}
+pre.rouge .ge {
+  color: #24292f;
+  font-style: italic;
+}
+pre.rouge .gs {
+  color: #24292f;
+  font-weight: bold;
+}
+</style>
 <a href="https://github.com/nguillaumin/perihelion-m68k-tutorials"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
 <style>.toc-current{font-weight: bold;} .toc-root{font-family: "Open Sans","DejaVu Sans",sans-serif;
                        font-size: 0.9em;} #content{display: flex; flex-direction: column; flex: 1 1 auto;}
              .nav-footer{text-align: center; margin-top: auto;}
              .nav-footer > p > a {white-space: nowrap;}</style>
 </head>
-<body id="index" class="book toc2 toc-left">
+<body id="_on_fading_to_black" class="book toc2 toc-left">
 <div id="header">
 <h1>The Atari ST MC68000 Assembly Language Tutorials</h1>
 <div class="details">
@@ -451,7 +569,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
-<p><span class="toc-root toc-current"><a href="index.html">The Atari ST MC68000 Assembly Language Tutorials</a></span></p><ul class="sectlevel1">
+<p><span class="toc-root"><a href="index.html">The Atari ST MC68000 Assembly Language Tutorials</a></span></p><ul class="sectlevel1">
 <li><a href="_foreword.html">Foreword</a>
 </li>
 <li><a href="_on_the_theory_behind_programming.html">On The Theory Behind Programming</a>
@@ -482,7 +600,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="_of_using_the_gramophone.html">Of Using The Gramophone</a>
 </li>
-<li><a href="_on_fading_to_black.html">On Fading To Black</a>
+<li><a href="_on_fading_to_black.html"><span class="toc-current">On Fading To Black</span></a>
 </li>
 <li><a href="_appendixes.html">Appendixes</a>
 </li>
@@ -490,79 +608,336 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div id="content">
-<div id="preamble">
+<div class="sect1">
+<h2 id="_on_fading_to_black">On Fading To Black</h2>
 <div class="sectionbody">
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-This tutorial is also available in <a href="perihelion-m68k-tutorials.epub">ePub format</a>.
-</td>
-</tr>
-</table>
+<div class="paragraph">
+<p><em>2002-03-28 (last edition of the initial revision)</em></p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>I wish for this night-time<br>
+to last for a lifetime<br>
+The darkness around me<br>
+Shores of a solar sea<br>
+Oh how I wish to go down with the sun<br>
+Sleeping<br>
+Weeping<br>
+With you</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; Nightwish<br>
+<cite>Sleeping Sun</cite>
 </div>
 </div>
+<div class="paragraph">
+<p>It has occurred to me that by striving ever forward, we&#8217;ve forgotten to speak about some
+basic things, so for this tutorial and the next one, we&#8217;ll be taking a step back and reviewing
+some things. You may have guessed these techniques yourself, but it never hurts to have it
+spelled out. Also, I thought I&#8217;d share some new thoughts on development, we&#8217;ll take that
+first.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="_foreword.html">Foreword</a></p>
-</li>
-<li>
-<p><a href="_on_the_theory_behind_programming.html">On The Theory Behind Programming</a></p>
-</li>
-<li>
-<p><a href="_of_the_workings_of_devpac_3_and_the_realisation_of_some_code.html">Of The Workings Of Devpac 3 And The Realisation Of Some Code</a></p>
-</li>
-<li>
-<p><a href="_of_various_things_mystic_and_important_mainly_concerning_the_art_of_understanding_digits_and_performing_traps.html">Of Various Things Mystic And Important, Mainly Concerning The Art Of Understanding Digits And Performing Traps</a></p>
-</li>
-<li>
-<p><a href="_of_the_ways_of_addressing_memory.html">Of The Ways Of Addressing Memory</a></p>
-</li>
-<li>
-<p><a href="_of_the_workings_of_the_graphics_memory_and_minor_skills_in_branching.html">Of The Workings Of The Graphics Memory And Minor Skills In Branching</a></p>
-</li>
-<li>
-<p><a href="_of_seeing_behind_the_curtain_of_an_execution_and_getting_intimate_with_files.html">Of Seeing Behind The Curtain Of An Execution And Getting Intimate With Files</a></p>
-</li>
-<li>
-<p><a href="_on_scrollers.html">On Scrollers</a></p>
-</li>
-<li>
-<p><a href="_of_scrolling_8_pixels_per_vbl_using_double_buffer.html">Of Scrolling 8 Pixels Per VBL Using Double Buffer</a></p>
-</li>
-<li>
-<p><a href="_of_revealing_the_unseen_and_expanding_our_consciousness_without_the_use_of_illegal_drugs.html">Of Revealing The Unseen And Expanding Our Consciousness Without The Use Of Illegal Drugs</a></p>
-</li>
-<li>
-<p><a href="_of_lighting_a_candle_and_casting_a_shadow.html">Of Lighting A Candle (And Casting A Shadow)</a></p>
-</li>
-<li>
-<p><a href="_of_making_the_mountain_move_to_mohammed.html">Of Making The Mountain Move To Mohammed</a></p>
-</li>
-<li>
-<p><a href="_of_controlling_the_puppets.html">Of Controlling The Puppets</a></p>
-</li>
-<li>
-<p><a href="_of_hearing_that_which_is_spoken.html">Of Hearing That Which Is Spoken</a></p>
-</li>
-<li>
-<p><a href="_of_using_the_gramophone.html">Of Using The Gramophone</a></p>
-</li>
-<li>
-<p><a href="_on_fading_to_black.html">On Fading To Black</a></p>
-</li>
-<li>
-<p><a href="_appendixes.html">Appendixes</a></p>
-</li>
-</ul>
+<div class="paragraph">
+<p>Most of the source for the tutorials in the past I&#8217;ve actually written in Devpac on a real Atari,
+but it has now become clear to me that developing in Windows on an IBM compatible is
+easier and more efficient. I got the tip over at <a href="http://www.atari-forum.com/" class="bare">http://www.atari-forum.com/</a>, a discussion forum for
+all topics Atari (where I&#8217;m one of the moderators for the coding section, yay). Have one
+"launcher file" with only one line</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="m68k">                <span class="kr">include</span> <span class="nv">whateveryoursourcename</span><span class="p">.</span><span class="nv">s</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>By doing this, you&#8217;ll assemble any source files you want, and you can edit those source files
+outside of Devpac, and then assemble them in Devpac. When I wrote this tutorial, I had a file
+named <code>_WRAP.S</code> that had the line <code>include tut15.s</code> in it. Then I used Ultraedit (my editor of
+choice) to edit <code>tut15.s</code>, I also had Devpac running under STEem. Whenever I felt like
+assembling my source, I just saved in Ultraedit, <code>ALT+Tab</code>-bed into STEem and hit <code>ALT+a</code> to
+assemble my source; smooth and easy.</p>
+</div>
+<div class="paragraph">
+<p>Speaking of Ultraedit, there is a topic going on over at <a href="http://www.atari-forum.com/viewtopic.php?t=946" class="bare">http://www.atari-forum.com/viewtopic.php?t=946</a>
+to try and work out good syntax highlighting for Atari assembly in Ultraedit (<a href="http://www.ultraedit.com/" class="bare">http://www.ultraedit.com/</a>).
+Wow, that&#8217;s a lot of various things you wouldn&#8217;t have seen pop up in a tutorial from say 1994.
+Now onto the serious stuff.</p>
+</div>
+<div class="paragraph">
+<p>The palette is an extremely powerful thing when you want to change colours quick and easy.
+Unfortunately it has the obvious limitation of not changing the pixels. Using the palette you
+can black out the screen without erasing the contents (by setting all colours to black), make
+things pulse (by incrementing and decrementing colour intensity) or wait with displaying a
+picture. Say you want to calculate a big fractal, just set the palette to all 0, calculate your
+fractal, then whip in the palette to display the result. The effect will be that no one will see
+you draw the fractal, only the final result will be shown.
+As we&#8217;ve been through before, there are 16 colours in the palette, the first one being the
+background colour, located at <code>$ff8240</code>. Each colour is a word long, making the palette end at
+<code>$ff825e</code>. Each word is built up like this</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="m68k"><span class="nl">00000RRR0GGG0BBB</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The first three bits control blue intensity, then there&#8217;s a zero bit, the next three bits control
+green intensity, a zero and the final (non-zero) three bits control red intensity. The maximum
+value you can get out of three bits is 8, and since the colour intensities are at 4 bit
+boundaries, they are very easy to access in hex (since each character in hex mode is a 4 bit
+quantity). Thus <code>$700</code> means max intensity of red and zero intensity for green and blue, <code>$444</code>
+means medium intensity for all three colours.</p>
+</div>
+<div class="paragraph">
+<p>When they built the STe, they thought that it would be nice to have more colours in the
+palette, and indeed, it&#8217;s easy to just add an additional bit since that would still have the
+palette on a 4 bit boundary, making each colour range from 0-15. However, there was a
+problem, they could not add a bit in the beginning and just shift the other bits to the left,
+since that would mean all old palette values would in effect be shifted left one bit creating an
+entirely different value than was originally intended.</p>
+</div>
+<div class="paragraph">
+<p>The solution to this problem is cunning, but unfortunate. They added the least significant bit
+where the zero bit used to be. This maintains backwards compatibility, and adds 8 new
+possible colour intensities. So the STe palette looks like this</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="m68k"><span class="nl">0000rRRRgGGGbBBB</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This means that $700 is still (almost) maximum intensity of red. What in the memory is
+perceived as the most significant bit, is in palette terms the least significant bit. This sounds
+very confusing perhaps, but just picture moving the uppermost bit of each colour intensity
+first. Let&#8217;s say then that we want the intensity between <code>$100</code> and <code>$200</code>, this would be colour
+<code>$900</code>, since that would be</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="m68k"><span class="nl">0000rRRRgGGGbBBB</span>
+<span class="nl">0000100100000000</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Which we can interpret as</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="m68k"><span class="nl">0000RRRrGGGgBBBb</span>
+<span class="nl">0000001100000000</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Thus, when using the STe palette, we must think about the fact that the most significant bit
+for each colour, is in actuality the least significant bit. The number order for intensities, from
+lowest to highest is 0, 8, 1, 9, 2, A, 3, B, 4, C, 5, D, 6, E, 7, F. So if you use colour <code>$fff</code>, the
+STe will interpret this as intensity 15 for all colours, and the ST will interpret it as colour
+intensity 7, since the ST doesn&#8217;t care about whether the fourth bit is set or not.</p>
+</div>
+<div class="paragraph">
+<p>That should be all there is to the palette, making full utilization of it will be up to each one. In
+order to do something I thought we&#8217;d just do a simple fade in effect. Fading in a picture is so
+much nicer than just whipping it onto screen. Fading out is also much nicer than just zapping
+it away, you can also fade to white and make the screen sort of flash away.</p>
+</div>
+<div class="paragraph">
+<p>What we want is to begin with a black palette and pixel data on the screen, then increment
+the colour values of the palette until they reach the values intended for the picture. In order
+to keep things simple, I opted to skip the STe palette since there&#8217;s lots of shifting involved
+whenever you want to use it. So the fade will only have a maximum of 7 intensities to work
+with, making it a pretty bad looking fade effect.</p>
+</div>
+<div class="paragraph">
+<p>We&#8217;ll need a copy of the original palette, and a current palette which we increment until it
+reaches the original. It would be tempting to compare the real palette to the current one and
+add <code>$111</code> (one intensity of each colour) if they don&#8217;t match, but that won&#8217;t work. Say one
+colour is supposed to be <code>$100</code>, if we compare our current <code>$000</code> with that, they don&#8217;t match,
+so we add <code>$111</code> making the current colour <code>$111</code>, which is more than <code>$100</code>. Instead, we must
+compare each red, green and blue value individually. This can easily be done by just masking
+off all bits except the three controlling the intensity for either red, green or blue.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="m68k">                <span class="k">move</span><span class="nd">.l </span> <span class="p">(</span><span class="nb">a7</span><span class="p">)</span><span class="o">+</span><span class="p">,</span> <span class="nb">a1</span>                 <span class="c1">; restore a1</span>
+
+                <span class="k">and</span><span class="nd">.w </span>  <span class="nd">#</span><span class="mb">%011100000000</span><span class="p">,</span> <span class="nb">d0</span>        <span class="c1">; mask off all but red values</span>
+                <span class="k">and</span><span class="nd">.w </span>  <span class="nd">#</span><span class="mb">%011100000000</span><span class="p">,</span> <span class="nb">d1</span>        <span class="c1">; mask off all but red values</span>
+
+                <span class="k">cmp</span><span class="nd">.w </span>  <span class="nb">d1</span><span class="p">,</span> <span class="nb">d0</span>                    <span class="c1">; see if red is correct intensity</span>
+                <span class="k">beq</span>     <span class="nv">red_fin</span>                   <span class="c1">; if not ...</span>
+                <span class="k">add</span><span class="nd">.w </span>  <span class="nd">#</span><span class="mb">%000100000000</span><span class="p">,</span> <span class="nb">d1</span>        <span class="c1">; ... add one intensity of red</span>
+<span class="nl">red_fin</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s assume <code>d0</code> holds the real colour, and <code>d1</code> holds the temporary. All bits except the ones
+controlling red are masked off, then values compared. If they do not match, add one to the
+value. The value to add will be different depending on which intensity we check for, since
+different intensities begin at different bit positions. That&#8217;s pretty much it, here&#8217;s the entire
+source</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="m68k">                <span class="kr">section</span> <span class="nv">text</span>
+
+                <span class="k">jsr</span>     <span class="nv">initialise</span>
+
+                <span class="k">movem</span><span class="nd">.l </span><span class="nv">picture</span><span class="o">+</span><span class="mi">2</span><span class="p">,</span> <span class="nb">d0</span><span class="o">-</span><span class="nb">d7</span>          <span class="c1">; put picture palette in d0-d7</span>
+                <span class="k">movem</span><span class="nd">.l </span><span class="nb">d0</span><span class="o">-</span><span class="nb">d7</span><span class="p">,</span> <span class="nv">pal</span>                <span class="c1">; copy palette to pal</span>
+
+                <span class="k">movem</span><span class="nd">.l </span><span class="nv">temp_pal</span><span class="p">,</span> <span class="nb">d0</span><span class="o">-</span><span class="nb">d7</span>           <span class="c1">; put current palette in d0-d7</span>
+                <span class="k">movem</span><span class="nd">.l </span><span class="nb">d0</span><span class="o">-</span><span class="nb">d7</span><span class="p">,</span> <span class="mh">$ff8240</span>            <span class="c1">; apply current palette (all 0)</span>
+
+                <span class="k">move</span><span class="nd">.w </span> <span class="nd">#</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="p">(</span><span class="nb">a7</span><span class="p">)</span>                 <span class="c1">; get physbase</span>
+                <span class="k">trap</span>    <span class="nd">#</span><span class="mi">14</span>
+                <span class="k">addq</span><span class="nd">.l </span> <span class="nd">#</span><span class="mi">2</span><span class="p">,</span> <span class="nb">a7</span>
+
+                <span class="k">move</span><span class="nd">.l </span> <span class="nb">d0</span><span class="p">,</span> <span class="nb">a0</span>                    <span class="c1">; a0 points to screen memory</span>
+                <span class="k">move</span><span class="nd">.l </span> <span class="nd">#</span><span class="nv">picture</span><span class="o">+</span><span class="mi">34</span><span class="p">,</span> <span class="nb">a1</span>           <span class="c1">; a1 points to picture</span>
+
+                <span class="k">move</span><span class="nd">.l </span> <span class="nd">#</span><span class="mi">7999</span><span class="p">,</span> <span class="nb">d0</span>                 <span class="c1">; 8000 longwords to a screen</span>
+<span class="nl">loop</span>
+                <span class="k">move</span><span class="nd">.l </span> <span class="p">(</span><span class="nb">a1</span><span class="p">)</span><span class="o">+</span><span class="p">,</span> <span class="p">(</span><span class="nb">a0</span><span class="p">)</span><span class="o">+</span>              <span class="c1">; move one longword to screen</span>
+                <span class="k">dbf</span>     <span class="nb">d0</span><span class="p">,</span> <span class="nv">loop</span>
+
+                <span class="k">move</span><span class="nd">.l </span> <span class="mh">$70</span><span class="p">,</span> <span class="nv">old_70</span>               <span class="c1">; backup $70</span>
+                <span class="k">move</span><span class="nd">.l </span> <span class="nd">#</span><span class="kr">main</span><span class="p">,</span> <span class="mh">$70</span>                <span class="c1">; start main routine</span>
+
+                <span class="k">move</span><span class="nd">.w </span> <span class="nd">#</span><span class="mi">7</span><span class="p">,</span> <span class="o">-</span><span class="p">(</span><span class="nb">a7</span><span class="p">)</span>                 <span class="c1">; wait keypress</span>
+                <span class="k">trap</span>    <span class="nd">#</span><span class="mi">1</span>
+                <span class="k">addq</span><span class="nd">.l </span> <span class="nd">#</span><span class="mi">2</span><span class="p">,</span> <span class="nb">a7</span>
+
+                <span class="k">move</span><span class="nd">.l </span> <span class="nv">old_70</span><span class="p">,</span> <span class="mh">$70</span>               <span class="c1">; restore $70</span>
+
+                <span class="k">jsr</span> <span class="nv">restore</span>
+
+                <span class="k">clr</span><span class="nd">.l </span>  <span class="o">-</span><span class="p">(</span><span class="nb">a7</span><span class="p">)</span>
+                <span class="k">trap</span>    <span class="nd">#</span><span class="mi">1</span>
+
+<span class="nl">main</span>
+                <span class="k">move</span><span class="nd">.w </span> <span class="nv">sr</span><span class="p">,</span> <span class="o">-</span><span class="p">(</span><span class="nb">a7</span><span class="p">)</span>                 <span class="c1">; backup status register</span>
+                <span class="k">or</span><span class="nd">.w </span>   <span class="nd">#</span><span class="mh">$0700</span><span class="p">,</span> <span class="nv">sr</span>                <span class="c1">; disable interrupts</span>
+                <span class="k">movem</span><span class="nd">.l </span><span class="nb">d0</span><span class="o">-</span><span class="nb">d7</span><span class="o">/</span><span class="nb">a0</span><span class="o">-</span><span class="nb">a6</span><span class="p">,</span> <span class="o">-</span><span class="p">(</span><span class="nb">a7</span><span class="p">)</span>        <span class="c1">; backup registers</span>
+
+                <span class="k">add</span><span class="nd">.l </span>  <span class="nd">#</span><span class="mi">1</span><span class="p">,</span> <span class="nv">counter</span>               <span class="c1">; increment counter variable</span>
+                <span class="k">cmp</span><span class="nd">.l </span>  <span class="nd">#</span><span class="mi">15</span><span class="p">,</span> <span class="nv">counter</span>              <span class="c1">; only execute main sometimes</span>
+                <span class="k">bne</span>     <span class="nv">do_nothing</span>                <span class="c1">; skip instructions</span>
+                <span class="k">clr</span><span class="nd">.l </span>  <span class="nv">counter</span>                   <span class="c1">; reset counter</span>
+
+                <span class="k">move</span><span class="nd">.l </span> <span class="nd">#</span><span class="nv">pal</span><span class="p">,</span> <span class="nb">a0</span>                  <span class="c1">; a0 points to values to reach</span>
+                <span class="k">move</span><span class="nd">.l </span> <span class="nd">#</span><span class="nv">temp_pal</span><span class="p">,</span> <span class="nb">a1</span>             <span class="c1">; a1 points to current values</span>
+
+                <span class="kr">rept</span>    <span class="mi">16</span>                        <span class="c1">; do for each color</span>
+                <span class="k">jsr</span>     <span class="nv">check_red</span>                 <span class="c1">; see if red intensity should increase</span>
+                <span class="k">jsr</span>     <span class="nv">check_green</span>               <span class="c1">; see if green intensity should increase</span>
+                <span class="k">jsr</span>     <span class="nv">check_blue</span>                <span class="c1">; see if blue intensity should increase</span>
+                <span class="k">add</span><span class="nd">.l </span>  <span class="nd">#</span><span class="mi">2</span><span class="p">,</span> <span class="nb">a0</span>                    <span class="c1">; point to next color</span>
+                <span class="k">add</span><span class="nd">.l </span>  <span class="nd">#</span><span class="mi">2</span><span class="p">,</span> <span class="nb">a1</span>                    <span class="c1">; point to next color</span>
+                <span class="kr">endr</span>
+
+                <span class="k">movem</span><span class="nd">.l </span><span class="nv">temp_pal</span><span class="p">,</span> <span class="nb">d0</span><span class="o">-</span><span class="nb">d7</span>           <span class="c1">; put current palette in d0-d7</span>
+                <span class="k">movem</span><span class="nd">.l </span><span class="nb">d0</span><span class="o">-</span><span class="nb">d7</span><span class="p">,</span> <span class="mh">$ff8240</span>            <span class="c1">; apply current palette</span>
+
+<span class="nl">do_nothing</span>
+                <span class="k">movem</span><span class="nd">.l </span><span class="p">(</span><span class="nb">a7</span><span class="p">)</span><span class="o">+</span><span class="p">,</span> <span class="nb">d0</span><span class="o">-</span><span class="nb">d7</span><span class="o">/</span><span class="nb">a0</span><span class="o">-</span><span class="nb">a6</span>        <span class="c1">; restore registers</span>
+                <span class="k">move</span><span class="nd">.w </span> <span class="p">(</span><span class="nb">a7</span><span class="p">)</span><span class="o">+</span><span class="p">,</span> <span class="nv">sr</span>                 <span class="c1">; restore status register</span>
+                <span class="nv">rte</span>                               <span class="c1">; finished interrupt</span>
+
+
+<span class="nl">check_red</span>
+                <span class="k">move</span><span class="nd">.w </span> <span class="p">(</span><span class="nb">a0</span><span class="p">),</span> <span class="nb">d0</span>                  <span class="c1">; move one final color into d0</span>
+                <span class="k">move</span><span class="nd">.w </span> <span class="p">(</span><span class="nb">a1</span><span class="p">),</span> <span class="nb">d1</span>                  <span class="c1">; move one temp color into d1</span>
+
+                <span class="k">and</span><span class="nd">.w </span>  <span class="nd">#</span><span class="mb">%011100000000</span><span class="p">,</span> <span class="nb">d0</span>        <span class="c1">; mask off all but red values</span>
+                <span class="k">and</span><span class="nd">.w </span>  <span class="nd">#</span><span class="mb">%011100000000</span><span class="p">,</span> <span class="nb">d1</span>        <span class="c1">; mask off all but red values</span>
+
+                <span class="k">cmp</span><span class="nd">.w </span>  <span class="nb">d1</span><span class="p">,</span> <span class="nb">d0</span>                    <span class="c1">; see if red is correct intensity</span>
+                <span class="k">beq</span>     <span class="nv">red_fin</span>                   <span class="c1">; if not ...</span>
+                <span class="k">add</span><span class="nd">.w </span>  <span class="nd">#</span><span class="mb">%000100000000</span><span class="p">,</span> <span class="p">(</span><span class="nb">a1</span><span class="p">)</span>      <span class="c1">; ... add one intensity of red</span>
+<span class="nl">red_fin</span>
+                <span class="k">rts</span>
+
+<span class="nl">check_green</span>
+                <span class="k">move</span><span class="nd">.w </span> <span class="p">(</span><span class="nb">a0</span><span class="p">),</span> <span class="nb">d0</span>                  <span class="c1">; move one final color into d0</span>
+                <span class="k">move</span><span class="nd">.w </span> <span class="p">(</span><span class="nb">a1</span><span class="p">),</span> <span class="nb">d1</span>                  <span class="c1">; move one temp color into d1</span>
+
+                <span class="k">and</span><span class="nd">.w </span>  <span class="nd">#</span><span class="mb">%000001110000</span><span class="p">,</span> <span class="nb">d0</span>        <span class="c1">; mask off all but green values</span>
+                <span class="k">and</span><span class="nd">.w </span>  <span class="nd">#</span><span class="mb">%000001110000</span><span class="p">,</span> <span class="nb">d1</span>        <span class="c1">; mask off all but green values</span>
+
+                <span class="k">cmp</span><span class="nd">.w </span>  <span class="nb">d1</span><span class="p">,</span> <span class="nb">d0</span>                    <span class="c1">; see if green at correct intensity</span>
+                <span class="k">beq</span>     <span class="nv">green_fin</span>                 <span class="c1">; if not ...</span>
+                <span class="k">add</span><span class="nd">.w </span>  <span class="nd">#</span><span class="mb">%000000010000</span><span class="p">,</span> <span class="p">(</span><span class="nb">a1</span><span class="p">)</span>      <span class="c1">; ... add one intensity of green</span>
+<span class="nl">green_fin</span>
+                <span class="k">rts</span>
+
+<span class="nl">check_blue</span>
+                <span class="k">move</span><span class="nd">.w </span> <span class="p">(</span><span class="nb">a0</span><span class="p">),</span> <span class="nb">d0</span>                  <span class="c1">; move one final color into d0</span>
+                <span class="k">move</span><span class="nd">.w </span> <span class="p">(</span><span class="nb">a1</span><span class="p">),</span> <span class="nb">d1</span>                  <span class="c1">; move one temp color into d1</span>
+
+                <span class="k">and</span><span class="nd">.w </span>  <span class="nd">#</span><span class="mb">%000000000111</span><span class="p">,</span> <span class="nb">d0</span>        <span class="c1">; mask off all but blue values</span>
+                <span class="k">and</span><span class="nd">.w </span>  <span class="nd">#</span><span class="mb">%000000000111</span><span class="p">,</span> <span class="nb">d1</span>        <span class="c1">; mask off all but blue values</span>
+
+                <span class="k">cmp</span><span class="nd">.w </span>  <span class="nb">d1</span><span class="p">,</span> <span class="nb">d0</span>                    <span class="c1">; see if blue at correct intensity</span>
+                <span class="k">beq</span>     <span class="nv">blue_fin</span>                  <span class="c1">; if not ...</span>
+                <span class="k">add</span><span class="nd">.w </span>  <span class="nd">#</span><span class="mb">%000000000001</span><span class="p">,</span> <span class="p">(</span><span class="nb">a1</span><span class="p">)</span>      <span class="c1">; ... add one intensity of blue</span>
+<span class="nl">blue_fin</span>
+                <span class="k">rts</span>
+
+                <span class="kr">include</span> <span class="nv">initlib</span><span class="nd">.s
+</span>
+                <span class="kr">section</span> <span class="nv">data</span>
+
+<span class="nl">old_70</span>          <span class="kt">dc</span><span class="nd">.l </span>   <span class="mi">0</span>
+<span class="nl">picture</span>         <span class="kr">incbin</span>  <span class="nv">sleepsun</span><span class="p">.</span><span class="nv">pi1</span>
+<span class="nl">counter</span>         <span class="kt">dc</span><span class="nd">.l </span>   <span class="mi">0</span>
+
+                <span class="kr">section</span> <span class="nv">bss</span>
+<span class="nl">pal</span>             <span class="kt">ds</span><span class="nd">.w </span>   <span class="mi">16</span>
+<span class="nl">temp_pal</span>        <span class="kt">ds</span><span class="nd">.w </span>   <span class="mi">16</span></code></pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/tutorial-15-screenshot.png" alt="tutorial 15 screenshot">
+</div>
+<div class="title">Figure 23. Fading</div>
+</div>
+<div class="paragraph">
+<p>First I save the palette of the picture in a storage space, then I put the temporary palette in,
+since the temporary palette is initialised to all 0&#8217;s, this has the effect of blacking out the
+screen. Next I load up the picture as described in <a href="#">tutorial 6</a> and set up
+the main routine.</p>
+</div>
+<div class="paragraph">
+<p>The counter code is for delay purposes; otherwise the fade effect would hardly be visible. I
+make <code>a0</code> point to the palette to reach, and point <code>a1</code> to the temporary one. Then I check the
+individual intensities, and add 2 to each pointer in order to point to the next colour, repeating
+this for the number of colours in the palette, namely 16.</p>
+</div>
+<div class="paragraph">
+<p>You will notice that the check sub-routines are a bit different than the one described above, I
+add to the value pointed to by <code>a1</code>, which is the current palette. It may be considered slightly
+bad program habit to just assume that <code>a1</code> points to the current palette like that, but coding
+demos and assembly in general depends on tight kept code that knows what it&#8217;s doing.
+Besides, the tutorials aren&#8217;t really for teaching you how to make good code; they are
+intended as basic introductions to various coding techniques.</p>
+</div>
+<div class="paragraph">
+<p>That&#8217;s that, one easy effect achieved by manipulating the palette. If you want to fade to
+white, just set the temporary palette to the real palette, and increment until you reach <code>$777</code>.
+If you want to experiment, I suggest trying to implement the effect with a STe palette
+instead, the included picture has a STe palette so it&#8217;s ready to go. This should involve shifting
+the fourth bit of each colour intensity down as the first when adding to the colour intensity,
+and then shift it back. For the next tutorial, I think we&#8217;ll handle full screen scrolling, without
+moving any picture data!</p>
+</div>
+</div>
 </div>
 <div class="paragraph nav-footer">
-<p>Next: <a href="_foreword.html">Foreword</a> →</p>
+<p>← Previous: <a href="_of_using_the_gramophone.html">Of Using The Gramophone</a> | ↑ Up: <a href="index.html">The Atari ST MC68000 Assembly Language Tutorials</a> | Next: <a href="_appendixes.html">Appendixes</a> →</p>
 </div>
 </div>
 <div id="footer">
