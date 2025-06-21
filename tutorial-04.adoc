@@ -103,15 +103,15 @@ clear with time I think, and especially after this example.
 | `move.l  #$1, a1`   | a1 = 1
 | `move.l  #$5, a2`   | a2 = 5
 | loop 4 times +
-  `move.b (a1)+,(a2)+` +
-  end loop          | $1 00000001 +
-                      $2 00000010 +
-                      $3 00000011 +
-                      $4 00000100 +
-                      $5 00000001 +
-                      $6 00000010 +
-                      $7 00000011 +
-                      $8 00000100
+  `++move.b (a1)+,(a2)+++` +
+  end loop            | $1 00000001 +
+                        $2 00000010 +
+                        $3 00000011 +
+                        $4 00000100 +
+                        $5 00000001 +
+                        $6 00000010 +
+                        $7 00000011 +
+                        $8 00000100
 |=======================
 
 As you might have noticed, if you studied the example thoroughly, when you want an
